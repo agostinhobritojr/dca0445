@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.17">
-<meta name="author" content="JOSE DA SILVA">
-<title>DCA0201: Paradigmas de programação</title>
+<meta name="author" content="Doc Writer">
+<title>Hello, AsciiDoc!</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /*! Asciidoctor default stylesheet | MIT License | https://asciidoctor.org */
@@ -436,221 +436,48 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 #footer-text{color:rgba(0,0,0,.6);font-size:.9em}}
 @media amzn-kf8{#header,#content,#footnotes,#footer{padding:0}}
 </style>
-<style>
-pre.pygments .hll { background-color: #ffffcc }
-pre.pygments { background: #f8f8f8; }
-pre.pygments .tok-c { color: #408080; font-style: italic } /* Comment */
-pre.pygments .tok-err { border: 1px solid #FF0000 } /* Error */
-pre.pygments .tok-k { color: #008000; font-weight: bold } /* Keyword */
-pre.pygments .tok-o { color: #666666 } /* Operator */
-pre.pygments .tok-ch { color: #408080; font-style: italic } /* Comment.Hashbang */
-pre.pygments .tok-cm { color: #408080; font-style: italic } /* Comment.Multiline */
-pre.pygments .tok-cp { color: #BC7A00 } /* Comment.Preproc */
-pre.pygments .tok-cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
-pre.pygments .tok-c1 { color: #408080; font-style: italic } /* Comment.Single */
-pre.pygments .tok-cs { color: #408080; font-style: italic } /* Comment.Special */
-pre.pygments .tok-gd { color: #A00000 } /* Generic.Deleted */
-pre.pygments .tok-ge { font-style: italic } /* Generic.Emph */
-pre.pygments .tok-gr { color: #FF0000 } /* Generic.Error */
-pre.pygments .tok-gh { color: #000080; font-weight: bold } /* Generic.Heading */
-pre.pygments .tok-gi { color: #00A000 } /* Generic.Inserted */
-pre.pygments .tok-go { color: #888888 } /* Generic.Output */
-pre.pygments .tok-gp { color: #000080; font-weight: bold } /* Generic.Prompt */
-pre.pygments .tok-gs { font-weight: bold } /* Generic.Strong */
-pre.pygments .tok-gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-pre.pygments .tok-gt { color: #0044DD } /* Generic.Traceback */
-pre.pygments .tok-kc { color: #008000; font-weight: bold } /* Keyword.Constant */
-pre.pygments .tok-kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
-pre.pygments .tok-kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
-pre.pygments .tok-kp { color: #008000 } /* Keyword.Pseudo */
-pre.pygments .tok-kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
-pre.pygments .tok-kt { color: #B00040 } /* Keyword.Type */
-pre.pygments .tok-m { color: #666666 } /* Literal.Number */
-pre.pygments .tok-s { color: #BA2121 } /* Literal.String */
-pre.pygments .tok-na { color: #7D9029 } /* Name.Attribute */
-pre.pygments .tok-nb { color: #008000 } /* Name.Builtin */
-pre.pygments .tok-nc { color: #0000FF; font-weight: bold } /* Name.Class */
-pre.pygments .tok-no { color: #880000 } /* Name.Constant */
-pre.pygments .tok-nd { color: #AA22FF } /* Name.Decorator */
-pre.pygments .tok-ni { color: #999999; font-weight: bold } /* Name.Entity */
-pre.pygments .tok-ne { color: #D2413A; font-weight: bold } /* Name.Exception */
-pre.pygments .tok-nf { color: #0000FF } /* Name.Function */
-pre.pygments .tok-nl { color: #A0A000 } /* Name.Label */
-pre.pygments .tok-nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
-pre.pygments .tok-nt { color: #008000; font-weight: bold } /* Name.Tag */
-pre.pygments .tok-nv { color: #19177C } /* Name.Variable */
-pre.pygments .tok-ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
-pre.pygments .tok-w { color: #bbbbbb } /* Text.Whitespace */
-pre.pygments .tok-mb { color: #666666 } /* Literal.Number.Bin */
-pre.pygments .tok-mf { color: #666666 } /* Literal.Number.Float */
-pre.pygments .tok-mh { color: #666666 } /* Literal.Number.Hex */
-pre.pygments .tok-mi { color: #666666 } /* Literal.Number.Integer */
-pre.pygments .tok-mo { color: #666666 } /* Literal.Number.Oct */
-pre.pygments .tok-sa { color: #BA2121 } /* Literal.String.Affix */
-pre.pygments .tok-sb { color: #BA2121 } /* Literal.String.Backtick */
-pre.pygments .tok-sc { color: #BA2121 } /* Literal.String.Char */
-pre.pygments .tok-dl { color: #BA2121 } /* Literal.String.Delimiter */
-pre.pygments .tok-sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
-pre.pygments .tok-s2 { color: #BA2121 } /* Literal.String.Double */
-pre.pygments .tok-se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
-pre.pygments .tok-sh { color: #BA2121 } /* Literal.String.Heredoc */
-pre.pygments .tok-si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
-pre.pygments .tok-sx { color: #008000 } /* Literal.String.Other */
-pre.pygments .tok-sr { color: #BB6688 } /* Literal.String.Regex */
-pre.pygments .tok-s1 { color: #BA2121 } /* Literal.String.Single */
-pre.pygments .tok-ss { color: #19177C } /* Literal.String.Symbol */
-pre.pygments .tok-bp { color: #008000 } /* Name.Builtin.Pseudo */
-pre.pygments .tok-fm { color: #0000FF } /* Name.Function.Magic */
-pre.pygments .tok-vc { color: #19177C } /* Name.Variable.Class */
-pre.pygments .tok-vg { color: #19177C } /* Name.Variable.Global */
-pre.pygments .tok-vi { color: #19177C } /* Name.Variable.Instance */
-pre.pygments .tok-vm { color: #19177C } /* Name.Variable.Magic */
-pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
-</style>
 </head>
-<body class="book toc2 toc-left">
+<body class="article">
 <div id="header">
-<h1>DCA0201: Paradigmas de programação</h1>
+<h1>Hello, AsciiDoc!</h1>
 <div class="details">
-<span id="author" class="author">JOSE DA SILVA</span><br>
-</div>
-<div id="toc" class="toc2">
-<div id="toctitle">Sumário</div>
-<ul class="sectlevel1">
-<li><a href="#_ementa">1. Ementa</a></li>
-<li><a href="#_bibliografia">2. Bibliografia</a></li>
-</ul>
+<span id="author" class="author">Doc Writer</span><br>
+<span id="email" class="email"><a href="mailto:doc@example.com">doc@example.com</a></span><br>
 </div>
 </div>
 <div id="content">
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Agostinho Brito &lt;<a href="mailto:agostinhobritojr@gmail.com">agostinhobritojr@gmail.com</a>&gt;</p>
+<p>An introduction to <a href="http://asciidoc.org">AsciiDoc</a>.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_ementa">1. Ementa</h2>
+<h2 id="_first_section">First Section</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Aqui vem um texto normal</p>
-</div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
-<p>lista de nivel 1</p>
+<p>item 1</p>
 </li>
 <li>
-<p>lista de nivel 1</p>
-<div class="ulist">
-<ul>
-<li>
-<p>lista de nivel 2</p>
+<p>item 2</p>
 </li>
-<li>
-<p>lista de nivel 2</p>
-</li>
-</ul>
+</ol>
 </div>
-</li>
-<li>
-<p>lista de nivel 1</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Link github (<a href="http://github.com/agostinhobritojr/dca0201">link do github</a>)</p>
-</div>
-<div class="paragraph">
-<p>A saída do programa <em>hello</em> é mostrado na Figura <a href="#fig_hello">Hello</a></p>
-</div>
-<div id="fig_hello" class="imageblock">
+<div class="listingblock">
 <div class="content">
-<img src="./figs/hello.png" alt="Saida do programa hello">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">puts "Hello, World!"</code></pre>
 </div>
-<div class="title">Figura 1. Saída do programa hello</div>
-</div>
-<div class="paragraph">
-<p>Aqui vem a listagem do programa <a href="exemplos/hello.cpp" class="bare">exemplos/hello.cpp</a> , mostrada
-Listagem <a href="#exa_hello">Hello</a>, cuja única funcionalidade apresentar na tela
-uma imagem fornecida via linha de comando.</p>
-</div>
-<div id="exa_hello" class="listingblock">
-<div class="title">Listagem 1. hello.cpp</div>
-<div class="content">
-<pre class="pygments highlight"><code data-lang="cpp"><span></span><span class="tok-cp">#include</span><span class="tok-w"> </span><span class="tok-cpf">&lt;iostream&gt;</span><span class="tok-cp"></span>
-<span class="tok-cp">#include</span><span class="tok-w"> </span><span class="tok-cpf">&lt;cv.h&gt;</span><span class="tok-cp"></span>
-<span class="tok-cp">#include</span><span class="tok-w"> </span><span class="tok-cpf">&lt;highgui.h&gt;</span><span class="tok-cp"></span>
-
-<span class="tok-k">using</span><span class="tok-w"> </span><span class="tok-k">namespace</span><span class="tok-w"> </span><span class="tok-nn">cv</span><span class="tok-p">;</span><span class="tok-w"></span>
-
-<span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-nf">main</span><span class="tok-p">(</span><span class="tok-kt">int</span><span class="tok-w"> </span><span class="tok-n">argc</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-kt">char</span><span class="tok-o">**</span><span class="tok-w"> </span><span class="tok-n">argv</span><span class="tok-p">){</span><span class="tok-w"></span>
-<span class="tok-w">  </span><span class="tok-n">Mat</span><span class="tok-w"> </span><span class="tok-n">image</span><span class="tok-p">;</span><span class="tok-w"></span>
-<span class="tok-w">  </span><span class="tok-n">image</span><span class="tok-w"> </span><span class="tok-o">=</span><span class="tok-w"> </span><span class="tok-n">imread</span><span class="tok-p">(</span><span class="tok-n">argv</span><span class="tok-p">[</span><span class="tok-mi">1</span><span class="tok-p">],</span><span class="tok-n">CV_LOAD_IMAGE_GRAYSCALE</span><span class="tok-p">);</span><span class="tok-w"></span>
-<span class="tok-w">  </span><span class="tok-n">imshow</span><span class="tok-p">(</span><span class="tok-s">&quot;image&quot;</span><span class="tok-p">,</span><span class="tok-w"> </span><span class="tok-n">image</span><span class="tok-p">);</span><span class="tok-w"></span>
-<span class="tok-w">  </span><span class="tok-n">waitKey</span><span class="tok-p">();</span><span class="tok-w"></span>
-<span class="tok-w">  </span><span class="tok-k">return</span><span class="tok-w"> </span><span class="tok-mi">0</span><span class="tok-p">;</span><span class="tok-w"></span>
-<span class="tok-p">}</span><span class="tok-w"></span></code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Podem ser inseridas equacoes como \$\int_a^b \xi f(x) dx\$</p>
-</div>
-<div class="paragraph">
-<p>Video no youtube</p>
-</div>
-<div class="videoblock">
-<div class="content">
-<iframe src="https://www.youtube.com/embed/zfzIDdHql1s?rel=0" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_bibliografia">2. Bibliografia</h2>
-<div class="sectionbody">
-<div class="ulist bibliography">
-<ul class="bibliography">
-<li>
-<p>Stephen Prata. 'C++ Primer Plus'. Addison-Wesley. 1990. 2 ed.</p>
-</li>
-<li>
-<p><a href="http://www.cplusplus.com" class="bare">http://www.cplusplus.com</a>. 'Principal portal de desenvolvimento e referência para programação em C++'.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Última atualização 2022-09-14 10:24:10 -0300
+Last updated 2022-09-14 10:03:10 -0300
 </div>
 </div>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
-    ignoreClass: "nostem|nolatexmath"
-  },
-  asciimath2jax: {
-    delimiters: [["\\$", "\\$"]],
-    ignoreClass: "nostem|noasciimath"
-  },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
