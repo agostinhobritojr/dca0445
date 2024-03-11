@@ -1,6 +1,5 @@
 #include <iostream>
-#include <cv.h>
-#include <highgui.h>
+#include <opencv2/opencv.hpp>
 
 using namespace cv;
 using namespace std;
@@ -9,7 +8,7 @@ int main(int, char**){
   Mat image;
   Vec3b val;
 
-  image= imread("bolhas.png",CV_LOAD_IMAGE_GRAYSCALE);
+  image= imread("bolhas.png",cv::IMREAD_GRAYSCALE);
   if(!image.data)
     cout << "nao abriu bolhas.png" << endl;
 
@@ -24,7 +23,7 @@ int main(int, char**){
   imshow("janela", image);  
   waitKey();
 
-  image= imread("bolhas.png",CV_LOAD_IMAGE_COLOR);
+  image= imread("bolhas.png",cv::IMREAD_COLOR);
 
   val[0] = 0;   //B
   val[1] = 0;   //G
