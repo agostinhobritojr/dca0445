@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.23">
 <meta name="author" content="JOSE DA SILVA">
 <title>DCA0201: Paradigmas de programação</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -141,7 +141,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -163,6 +163,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -328,7 +329,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -534,34 +535,34 @@ pre.pygments .tok-il { color: #666666 } /* Literal.Number.Integer.Long */
 <div class="paragraph">
 <p>Aqui vem um texto normal</p>
 </div>
-<div class="ulist">
-<ul>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>lista de nivel 1</p>
 </li>
 <li>
 <p>lista de nivel 1</p>
-<div class="ulist">
-<ul>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>lista de nivel 2</p>
+</li>
+</ol>
+</div>
+</li>
 <li>
 <p>lista de nivel 2</p>
 </li>
 <li>
-<p>lista de nivel 2</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
 <p>lista de nivel 1</p>
 </li>
-</ul>
+</ol>
 </div>
 <div class="paragraph">
-<p>Link github (<a href="http://github.com/agostinhobritojr/dca0201">link do github</a>)</p>
+<p>Link github (<a href="http://github.com/agostinhobritojr/dca0201">link do github</a>). <a href="http:www.google.com" class="bare">http:www.google.com</a>.</p>
 </div>
 <div class="paragraph">
-<p>A saída do programa <em>hello</em> é mostrado na Figura <a href="#fig_hello">Hello</a></p>
+<p>A saída do <strong>programa</strong> <em>hello</em> é <span class="underline">underline me</span><sub>mostrado</sub> na Figura <a href="#fig_hello">Hello</a></p>
 </div>
 <div id="fig_hello" class="imageblock">
 <div class="content">
@@ -593,7 +594,7 @@ uma imagem fornecida via linha de comando.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Podem ser inseridas equacoes como \$\int_a^b \xi f(x) dx\$</p>
+<p>Podem ser inseridas equacoes como <span class="image"><img src="./figs/stem-f556b221d0cdcb4fee77723243e2efe7.png" alt="stem f556b221d0cdcb4fee77723243e2efe7" width="64" height="16"></span></p>
 </div>
 <div class="paragraph">
 <p>Video no youtube</p>
@@ -603,9 +604,9 @@ uma imagem fornecida via linha de comando.</p>
 <iframe src="https://www.youtube.com/embed/zfzIDdHql1s?rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 </div>
-<div class="videoblock">
+<div class="videoblock text-center">
 <div class="content">
-<video src="./figs/MyVideo.avi" controls>
+<video src="./figs/video.mp4" width="640" autoplay controls>
 Your browser does not support the video tag.
 </video>
 </div>
@@ -630,32 +631,8 @@ Your browser does not support the video tag.
 </div>
 <div id="footer">
 <div id="footer-text">
-Última atualização 2024-10-02 10:15:20 -0300
+Última atualização 2025-09-01 09:53:44 -0300
 </div>
 </div>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  messageStyle: "none",
-  tex2jax: {
-    inlineMath: [["\\(", "\\)"]],
-    displayMath: [["\\[", "\\]"]],
-    ignoreClass: "nostem|nolatexmath"
-  },
-  asciimath2jax: {
-    delimiters: [["\\$", "\\$"]],
-    ignoreClass: "nostem|noasciimath"
-  },
-  TeX: { equationNumbers: { autoNumber: "none" } }
-})
-MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
-  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
-    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains("stemblock")) {
-      data.math.root.display = "block"
-    }
-    return data
-  })
-})
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>
